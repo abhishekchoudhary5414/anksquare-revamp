@@ -88,9 +88,9 @@ const Testimonial: React.FC = () => {
                                             />
                                         </div>
                                         <div className={styles.clientDetails}>
-                                            <h4 className={styles.clientName} itemProp="author" itemScope itemType="https://schema.org/Person">
+                                            <p className={styles.clientName} itemProp="author" itemScope itemType="https://schema.org/Person">
                                                 <span itemProp="name">{t.name}</span>
-                                            </h4>
+                                            </p>
                                             <p className={styles.clientPosition} itemProp="jobTitle">
                                                 {t.position}
                                             </p>

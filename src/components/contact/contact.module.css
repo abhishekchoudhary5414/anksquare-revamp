@@ -74,11 +74,13 @@
   font-size: 1.5rem;
 }
 
-.infoContent h3 {
+.infoContent .infoTitle {
   font-size: 1.125rem;
   font-weight: 600;
   color: var(--text-primary);
+  line-height: normal;
   margin-bottom: 0.25rem;
+  word-break: normal;
 }
 
 .infoContent p {

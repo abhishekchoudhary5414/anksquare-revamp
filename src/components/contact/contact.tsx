@@ -173,7 +173,7 @@ const Contact = () => {
                             >
                                 <div className={styles.iconWrapper} aria-hidden="true">{info.icon}</div>
                                 <div className={styles.infoContent}>
-                                    <h3>{info.title}</h3>
+                                    <p className={styles.infoTitle}>{info.title}</p>
                                     <p>{info.content}</p>
                                 </div>
                             </a>
@@ -183,11 +183,10 @@ const Contact = () => {
                     <form
                         onSubmit={handleSubmit}
                         className={styles.form}
-                        aria-labelledby="contact-form-heading"
+                        aria-label="Contact form"
                         itemScope 
                         itemType="https://schema.org/ContactForm"
                     >
-                        <h2 id="contact-form-heading" style={{ display: 'none' }}>Contact Form</h2>
                         <div className={styles.formGroup}>
                             <label htmlFor="name-input">Name *</label>
                             <input
@@ -248,7 +247,7 @@ const Contact = () => {
                 <div
                     className={styles.mapSection}
                 >
-                    <h2 style={{ marginBottom: '1.5rem', fontSize: '1.5rem' }}>Visit Our Office Location</h2>
+                    <h3 style={{ marginBottom: '1.5rem', fontSize: '1.5rem' }}>Visit Our Office Location</h3>
                     <div className={styles.mapWrapper}>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8666266352675!2d85.05918450000001!3d25.6093478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57d9feb6ce2d%3A0xc0afc42975406f08!2sAnk%20Square%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1757592675504!5m2!1sen!2sin"

@@ -42,7 +42,7 @@ const MainService = ({ service, isReversed }: MainServiceComponentProps) => {
             <div
                 className={styles.contentSection}
             >
-                <h2 className={styles.mainTitle}>{service.title}</h2>
+                <h3 className={styles.mainTitle}>{service.title}</h3>
                 <p className={styles.mainDescription}>{service.description}</p>
                 <ul className={styles.mainFeatures}>
                     {service.features.map((feature, index) => (
@@ -88,7 +88,7 @@ const SubServiceCard = ({ service }: { service: SubService }) => {
                     width={60}
                 />
             </div>
-            <h3 className={styles.cardTitle}>{service.title}</h3>
+            <h5 className={styles.cardTitle}>{service.title}</h5>
             <ul className={styles.cardFeatures}>
                 {service.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
@@ -118,11 +118,11 @@ const Services = () => {
                         />
 
                         <div className={styles.subServices}>
-                            <h2 className={styles.subTitle}>
+                            <h4 className={styles.subTitle}>
                                 {index === 0 ? 'Amazon & Flipkart Marketplace Management' : 
                                  index === 1 ? 'Custom Website Development Services' : 
                                  'Digital Marketing & SEO Services'}
-                            </h2>
+                            </h4>
                             <div className={styles.cardGrid}>
                                 {index === 0
                                     ? marketplaceServices.map(service => (

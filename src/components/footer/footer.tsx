@@ -55,7 +55,7 @@ const Footer = () => {
 
                     <div className={styles.linksSection}>
                         <div className={styles.linkColumn}>
-                            <h3>Quick Links</h3>
+                            <h2>Quick Links</h2>
                             <ul>
                                 {quickLinks.map((link, index) => (
                                     <li key={index}>
@@ -66,7 +66,7 @@ const Footer = () => {
                         </div>
 
                         <div className={styles.linkColumn}>
-                            <h3>Website Development</h3>
+                            <h2>Website Services</h2>
                             <ul>
                                 {webdevelopment.map((service, index) => (
                                     <li key={index}>
@@ -77,7 +77,7 @@ const Footer = () => {
                         </div>
 
                         <div className={styles.linkColumn}>
-                            <h3>Account Management</h3>
+                            <h2>Account Management</h2>
                             <ul>
                                 {accountmanagement.map((service, index) => (
                                     <li key={index}>

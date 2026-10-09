@@ -5,6 +5,12 @@ import Button from '../../components/button/Button'
 import Image from 'next/image'
 import { service } from '@/data/details'
 
+const serviceHighlights = [
+  { ...service.merchantAccountManagement, title: 'Marketplace Account Support' },
+  { ...service.websiteDevelopment, title: 'Custom Website Solutions' },
+  { ...service.digitalMarketing, title: 'Online Growth Services' },
+]
+
 const About = () => {
   return (
     <section className={styles.about} aria-labelledby="about-heading" itemScope itemType="https://schema.org/AboutPage">
@@ -47,7 +53,7 @@ const About = () => {
             </p>
 
             <div className={styles.features}>
-              {Object.values(service).map((service, index) => (
+              {serviceHighlights.map((service, index) => (
                 <div
                   key={index}
                   className={styles.featureItem}
