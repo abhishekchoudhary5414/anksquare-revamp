@@ -54,8 +54,8 @@ const Footer = () => {
                     </div>
 
                     <div className={styles.linksSection}>
-                        <div className={styles.linkColumn}>
-                            <h2>Quick Links</h2>
+                        <nav className={styles.linkColumn} aria-label="Quick links">
+                            <p className={styles.columnTitle}>Quick Links</p>
                             <ul>
                                 {quickLinks.map((link, index) => (
                                     <li key={index}>
@@ -63,10 +63,10 @@ const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </nav>
 
-                        <div className={styles.linkColumn}>
-                            <h2>Website Services</h2>
+                        <nav className={styles.linkColumn} aria-label="Website services">
+                            <p className={styles.columnTitle}>Website Services</p>
                             <ul>
                                 {webdevelopment.map((service, index) => (
                                     <li key={index}>
@@ -74,10 +74,10 @@ const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </nav>
 
-                        <div className={styles.linkColumn}>
-                            <h2>Account Management</h2>
+                        <nav className={styles.linkColumn} aria-label="Account management">
+                            <p className={styles.columnTitle}>Account Management</p>
                             <ul>
                                 {accountmanagement.map((service, index) => (
                                     <li key={index}>
@@ -85,7 +85,7 @@ const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </nav>
 
                     </div>
                 </div>
