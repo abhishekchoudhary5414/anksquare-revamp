@@ -12,6 +12,7 @@ const Blog = ({ isSlider = true }: BlogProps) => {
   const posts: BlogCardData[] = blogPosts.map(post => ({
     id: post.id,
     title: post.title,
+    linkLabel: post.linkLabel ?? `Read ${post.category}`,
     excerpt: post.excerpt,
     image: post.image,
     author: post.author,

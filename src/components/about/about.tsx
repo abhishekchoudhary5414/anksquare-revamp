@@ -60,7 +60,7 @@ const About = () => {
                 >
                   <span className={styles.featureIcon}>{service.icon}</span>
                   <div>
-                    <h3 className={styles.featureTitle}>{service.title}</h3>
+                    <p className={styles.featureTitle}>{service.title}</p>
                     <p className={styles.featureDescription}>
                       {service.features.join(' • ')}
                     </p>

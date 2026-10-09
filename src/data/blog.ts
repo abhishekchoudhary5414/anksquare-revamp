@@ -1,6 +1,7 @@
 export interface BlogPost {
   id: number;
   title: string;
+  linkLabel?: string;
   excerpt: string;
   content: string;
   image: string;
@@ -29,6 +30,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 1,
     title: "The Future of Digital Marketing in 2026",
+    linkLabel: "Read digital trends",
     excerpt: "Explore the emerging trends, AI tools, and consumer behaviors that will shape digital marketing in the coming years.",
     content: "Digital marketing is evolving rapidly with AI, voice search, and hyper-personalization leading the way. In 2026, brands will need to focus on data-driven strategies, immersive content, and seamless customer journeys to stay competitive.",
     image: "/assets/blog/blog1.jpg",
@@ -66,6 +68,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 2,
     title: "AI-Powered Personalization: Next-Level Customer Experiences",
+    linkLabel: "Read AI guide",
     excerpt: "Discover how AI is enabling brands to deliver highly personalized experiences at scale across digital platforms.",
     content: "From predictive analytics to dynamic content delivery, AI is transforming how businesses engage with customers. Learn how machine learning models can help tailor messaging, recommend products, and improve retention.",
     image: "/assets/blog/blog2.jpg",
@@ -103,6 +106,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 3,
     title: "Video Marketing Strategies That Convert in 2026",
+    linkLabel: "Read video tips",
     excerpt: "Learn how to use short-form and long-form video content to drive engagement, build trust, and boost conversions.",
     content: "Video remains one of the most powerful tools in digital marketing. In 2026, brands must focus on storytelling, mobile-first formats, and interactive video experiences to capture attention and drive action.",
     image: "/assets/blog/blog3.jpg",
@@ -140,6 +144,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 4,
     title: "Voice Search Optimization: How to Get Found",
+    linkLabel: "Read voice search",
     excerpt: "Learn how spoken queries differ from typed searches and make your answers clear and useful on mobile devices.",
     content: "Voice input gives people another way to search, often using a complete question or a hands-free command. There is no separate optimization that guarantees a voice result. The same basics still matter: provide an accurate answer, make the page accessible and fast, and keep local business information current when location is relevant.",
     image: "/assets/blog/blog4.jpg",
@@ -177,6 +182,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 5,
     title: "Influencer Marketing: Beyond the Basics",
+    linkLabel: "Read influencer tips",
     excerpt: "Explore how micro- and nano-influencers are reshaping brand collaborations and driving niche engagement.",
     content: "Influencer marketing is evolving. Smaller creators with loyal audiences are delivering higher ROI than traditional celebrities. Learn how to identify the right influencers, build authentic partnerships, and measure success.",
     image: "/assets/blog/blog5.jpg",

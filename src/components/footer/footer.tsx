@@ -15,9 +15,9 @@ const Footer = () => {
     const year = new Date().getFullYear()
 
     const socialLinks = [
-        { href: social.instagram, icon: <InstagramIcon /> },
-        { href: social.pinterest, icon: <PinterestIcon /> },
-        { href: social.youtube, icon: <YouTubeIcon /> }
+        { href: social.instagram, icon: <InstagramIcon />, label: 'Ank Square on Instagram' },
+        { href: social.pinterest, icon: <PinterestIcon />, label: 'Ank Square on Pinterest' },
+        { href: social.youtube, icon: <YouTubeIcon />, label: 'Ank Square on YouTube' }
     ]
 
     return (
@@ -102,6 +102,7 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.socialLink}
+                                aria-label={link.label}
                             >
                                 {link.icon}
                             </a>

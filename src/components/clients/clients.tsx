@@ -20,6 +20,13 @@ interface ClientsProps {
     isSlider?: boolean;
 }
 
+const getClientWorkLinkText = (clientName: string) => {
+    const firstName = clientName.split(' ')[0];
+    const possessive = firstName.endsWith('s') ? `${firstName}'` : `${firstName}'s`;
+
+    return `${possessive} work`;
+};
+
 const Clients: React.FC<ClientsProps> = ({ isSlider = true }) => {
     const swiperRef = useRef<SwiperType | null>(null);
 
@@ -56,7 +63,8 @@ const Clients: React.FC<ClientsProps> = ({ isSlider = true }) => {
 
                                 <div className={styles.ctaButton}>
                                     <Button className={styles.ctaButtonPrimary}
-                                        variant='primary' href={`/client/${client.slug}`}>View Project
+                                        variant='primary' href={`/client/${client.slug}`}>
+                                        {getClientWorkLinkText(client.name)}
                                     </Button>
                                 </div>
                             </div>
@@ -135,7 +143,8 @@ const Clients: React.FC<ClientsProps> = ({ isSlider = true }) => {
 
                                     <div className={styles.ctaButton}>
                                         <Button className={styles.ctaButtonPrimary}
-                                            variant='primary' href={`/client/${client.slug}`}>View Project
+                                            variant='primary' href={`/client/${client.slug}`}>
+                                            {getClientWorkLinkText(client.name)}
                                         </Button>
                                     </div>
 

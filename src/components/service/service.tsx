@@ -14,6 +14,15 @@ interface MainServiceComponentProps {
     isReversed: boolean;
 }
 
+const getSubServiceLinkText = (title: string) => {
+    const serviceName = title
+        .replace(/ Website$/, '')
+        .replace(/ Marketing$/, '');
+    const conciseName = serviceName === 'Interior Design' ? 'Interiors' : serviceName;
+
+    return `Explore ${conciseName}`;
+};
+
 const MainService = ({ service, isReversed }: MainServiceComponentProps) => {
     const router = useRouter()
 
@@ -54,7 +63,9 @@ const MainService = ({ service, isReversed }: MainServiceComponentProps) => {
                     ))}
                 </ul>
                 <div className={styles.mainButtons}>
-                    <Button href={service.path} variant="primary">View More</Button>
+                    <Button href={service.path} variant="primary">
+                        Explore {service.title}
+                    </Button>
                     <Button onClick={handleEnquiryClick} variant="secondary">Enquiry Now</Button>
                 </div>
             </div>
@@ -95,7 +106,7 @@ const SubServiceCard = ({ service }: { service: SubService }) => {
                 ))}
             </ul>
             <Button href={`/service/${service.slug}`} variant="primary" className={styles.viewDetails}>
-                View Details
+                {getSubServiceLinkText(service.title)}
             </Button>
         </div>
     )

@@ -17,6 +17,7 @@ import Button from '@/components/button/Button'
 export interface BlogCardData {
   id: number
   title: string
+  linkLabel: string
   excerpt: string
   image: string
   author: string
@@ -59,7 +60,7 @@ const BlogCard = ({ post }: { post: BlogCardData }) => (
         </div>
       </div>
       <Button href={`/blog/${post.slug}`} variant="primary">
-        Read More
+        {post.linkLabel}
         <FaChevronRight className={styles.arrow} />
       </Button>
     </div>

@@ -119,7 +119,7 @@ const Hero = () => {
                   />
                 </div>
                 <div className={styles.certContent}>
-                  <h3 className={styles.certTitle}>{cert.title}</h3>
+                  <p className={styles.certTitle}>{cert.title}</p>
                   <p className={styles.certDescription}>{cert.description}</p>
                   
                 </div>
