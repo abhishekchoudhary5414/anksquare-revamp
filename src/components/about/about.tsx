@@ -30,7 +30,7 @@ const About = () => {
             <div className={styles.imageBorder}>
               <Image
                 src="/assets/illustrations/about-team.svg"
-                alt=""
+                alt="Illustration of a team collaborating around a website design"
                 width={500}
                 height={500}
                 sizes="(max-width: 768px) 100vw, 50vw"

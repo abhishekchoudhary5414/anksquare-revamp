@@ -99,7 +99,7 @@ const SubServiceCard = ({ service }: { service: SubService }) => {
                     width={60}
                 />
             </div>
-            <h5 className={styles.cardTitle}>{service.title}</h5>
+            <p className={styles.cardTitle}>{service.title}</p>
             <ul className={styles.cardFeatures}>
                 {service.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
