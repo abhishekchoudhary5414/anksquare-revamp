@@ -73,26 +73,26 @@ export function generateSEO(props: SEOProps): Metadata {
 // Predefined SEO configurations for common pages
 export const seoConfigs = {
   home: {
-    title: "Ank Square - Digital Services for Business Growth | Merchant Account Management & Website Development",
-    description: "Transform your business with Ank Square's expert digital service. We specialize in merchant account management for Amazon, Flipkart & more, custom website development, and digital marketing solutions. 5+ years experience, 500+ projects completed.",
-    keywords: ["digital service", "merchant account management", "website development", "digital marketing", "SEO", "Amazon seller account", "Flipkart seller", "e-commerce solutions"],
+    title: "Ank Square | Web Development & Merchant Services",
+    description: "Transform your business with Ank Square’s expert web development and merchant account management services. Get SEO-friendly websites and professional seller support.",
+    keywords: ["web development services", "website development", "custom website development", "merchant account management", "Amazon seller account management", "Flipkart seller account management", "e-commerce solutions","digital marketing services", "SEO services", "ecommerce website development"],
   },
 
   service: {
     title: "Digital Services - Merchant Account Management, Website Development & Digital Marketing | Ank Square",
     description: "Comprehensive digital service including merchant account management for major platforms, custom website development, and results-driven digital marketing solutions.",
-    keywords: ["merchant account management", "website development", "digital marketing", "Amazon seller service", "Flipkart account management", "e-commerce solutions"],
+    keywords: ["digital services", "web development services", "merchant account management", "Amazon seller account management", "Flipkart seller account management", "digital marketing services", "SEO services", "e-commerce solutions", "ecommerce website development"],
   },
 
   about: {
     title: "About Ank Square - Digital Services Expert & Founder Mukesh Kumar",
     description: "Learn about Ank Square's mission to empower businesses with innovative digital solutions. Founded by Mukesh Kumar with 5+ years of experience in digital service.",
-    keywords: ["about Ank Square", "Mukesh Kumar", "digital service company", "business growth solutions"],
+    keywords: ["Ank Square", "Ank Square Private Limited", "digital services company", "web development company", "business growth solutions"],
   },
 
   contact: {
     title: "Contact Ank Square - Get Your Digital Services Quote Today",
     description: "Ready to grow your business? Contact Ank Square for expert merchant account management, website development, and digital marketing service.",
-    keywords: ["contact Ank Square", "digital service quote", "business consultation"],
+    keywords: ["contact Ank Square", "digital service quote", "business consultation", "web development consultation"], 
   },
 };

@@ -98,9 +98,9 @@ const Services = () => {
         <section className={styles.servicesSection}>
             <div className={styles.container}>
                 <Heading
-                    subtitle="Services"
-                    title="End-to-End Ecommerce Solutions Powered By "
-                    titleHighlight="Digital Expertise"
+                    subtitle="Our Services"
+                    title="Web Development & "
+                    titleHighlight="E-commerce Solutions"
                 />
 
                   {mainServices.map((service, index) => (
@@ -112,9 +112,9 @@ const Services = () => {
 
                         <div className={styles.subServices}>
                             <h2 className={styles.subTitle}>
-                                {index === 0 ? 'Marketplace Solutions' : 
-                                 index === 1 ? 'Website Solutions' : 
-                                 'Digital Marketing Solutions'}
+                                {index === 0 ? 'Amazon & Flipkart Marketplace Management' : 
+                                 index === 1 ? 'Custom Website Development Services' : 
+                                 'Digital Marketing & SEO Services'}
                             </h2>
                             <div className={styles.cardGrid}>
                                 {index === 0

@@ -41,19 +41,20 @@ export const heroCards: HeroCard[] = [
 
 const Hero = () => {
   return (
-    <section className={styles.hero} aria-labelledby="hero-title" itemScope itemType="https://schema.org/WebPage">
+    <section className={styles.hero} aria-labelledby="hero-title">
       <div className={styles.container}>
         <div className={styles.content}>
           <div
             className={styles.textContent}
           >
             <h1 id="hero-title" className={styles.title}>
-              Grow Your Online Business with Smart{' '}
-              <span className={styles.highlight}>Marketplace Solutions</span>
+              Grow Your Business with{' '}
+              <span className={styles.highlight}>Web Development & Marketplace Solutions</span>
             </h1>
+
             <p className={styles.description}>
-              We help businesses sell their products online by taking care of their seller accounts on platforms like Amazon, Flipkart and Others. From setting up your account to improving your product listings and handling daily tasks—we manage it all so your business runs smoothly.
-              We also build custom websites that match your brand and help you look professional online. Plus, we offer branding solutions to make your business stand out and be easily recognized.
+              Ank Square helps businesses grow online with professional web development and marketplace account management. We support Amazon and Flipkart sellers with account setup,
+              product listing optimization, and daily account management. We also build custom, responsive websites to strengthen your online presence and help your brand stand out.
             </p>
 
             <div className={styles.cta} role="group" aria-label="Primary actions">
@@ -95,7 +96,7 @@ const Hero = () => {
         <div
           className={styles.certificateSection}
         >
-          <h2 className={styles.certSectionTitle}>Work With Certified e-Commerce Account Management Partner Only</h2>
+          <h2 className={styles.certSectionTitle}>Work With Certified E-Commerce Account Management Partners</h2>
           <div className={styles.certContainer}>
             {certificates.map((cert, index) => (
               <div
