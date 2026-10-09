@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const homepageMetadata: Metadata = {
-  title: 'Ank Square Private Limited | Web Development & Merchant Services',
-  description: 'Transform your business with Ank Square’s expert web development and merchant account management services. Get SEO-friendly websites and professional seller support.',
+  title: 'Ank Square | Web Development & E-commerce Solutions',
+  description: 'Grow your business with Ank Square’s web development, merchant account management, SEO-friendly websites and professional seller support.',
   keywords: [
         'web development services',
         'website development',

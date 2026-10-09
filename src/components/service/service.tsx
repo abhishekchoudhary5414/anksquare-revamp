@@ -98,7 +98,7 @@ const Services = () => {
         <section className={styles.servicesSection}>
             <div className={styles.container}>
                 <Heading
-                    subtitle="Our Services"
+                    subtitle="Explore Our Solutions"
                     title="Web Development & "
                     titleHighlight="E-commerce Solutions"
                 />
