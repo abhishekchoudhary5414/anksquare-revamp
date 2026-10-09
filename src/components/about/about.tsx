@@ -2,7 +2,7 @@
 import styles from './About.module.css'
 import Heading from '../../components/heading/heading'
 import Button from '../../components/button/Button'
-import AboutSVG from "../../svg/AboutSVG/AboutSVG"
+import Image from 'next/image'
 import { service } from '@/data/details'
 
 const About = () => {
@@ -22,7 +22,14 @@ const About = () => {
             className={styles.imageSection}
           >
             <div className={styles.imageBorder}>
-              <AboutSVG />
+              <Image
+                src="/assets/illustrations/about-team.svg"
+                alt=""
+                width={500}
+                height={500}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className={styles.illustration}
+              />
             </div>
             <div className={styles.experience}>
               <span className={styles.number}>5+</span>

@@ -1,10 +1,4 @@
-import { FC } from 'react'
 import { StaticImageData } from 'next/image'
-
-
-import MerchantAccountSvg from "../svg/AccountManagerSVG/AccountManagerSVG.jsx"
-import WebsiteDevelopmentSvg from "../svg/WebDevelopmentSVG/WebDevelopmentSVG.jsx"
-import SocialMediaSvg from "../svg/SocialMediaSVG/SocialMediaSVG.jsx"
 
 
 interface ServiceDetail {
@@ -36,7 +30,7 @@ export interface MainServiceProps {
     title: string
     description: string
     features: string[]
-    image: FC
+    image: string
     path: string
 
 }
@@ -63,7 +57,7 @@ export const mainServices: MainServiceProps[] = [
             'Inventory Management',
             'Customer Service Support'
         ],
-        image: MerchantAccountSvg,
+        image: '/assets/illustrations/service-marketplace.svg',
         path: '/service/merchant-management'
     },
     {
@@ -77,7 +71,7 @@ export const mainServices: MainServiceProps[] = [
             'Performance Tuning',
             'Ongoing Support'
         ],
-        image: WebsiteDevelopmentSvg,
+        image: '/assets/illustrations/service-web-development.svg',
         path: '/service/web-development'
     },
     {
@@ -91,7 +85,7 @@ export const mainServices: MainServiceProps[] = [
             'Content Strategy',
             'Performance Analytics'
         ],
-        image: SocialMediaSvg, // Replace with your actual SVG or image reference
+        image: '/assets/illustrations/service-digital-marketing.svg',
         path: '/service/digital-marketing'
     }
 ]
@@ -766,5 +760,4 @@ export const digitalMarketingTypes: SubService[] = [
         }
     }
 ];
-
 

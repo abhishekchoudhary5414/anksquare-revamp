@@ -48,6 +48,12 @@
   border: 2px solid rgba(33, 63, 97, 0.1);
 }
 
+.illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .experience {
   position: absolute;
   bottom: -20px;

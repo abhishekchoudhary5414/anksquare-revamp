@@ -29,7 +29,14 @@ const MainService = ({ service, isReversed }: MainServiceComponentProps) => {
             <div
                 className={styles.imageSection}
             >
-                <service.image />
+                <Image
+                    src={service.image}
+                    alt={`${service.title} illustration`}
+                    width={500}
+                    height={500}
+                    className={styles.mainImage}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                />
             </div>
 
             <div

@@ -1,7 +1,6 @@
 'use client'
 import styles from './hero.module.css'
 import Button from '@/components/button/Button'
-import HeroSvg from "../../svg/HeroSVG/HeroSVG"
 import { FaShoppingCart, FaCode, FaChartLine, FaTools } from 'react-icons/fa'
 import type { IconType } from 'react-icons'
 import Image from 'next/image'
@@ -71,7 +70,14 @@ const Hero = () => {
             className={styles.imageContainer}
           >
             <div className={styles.imageWrapper}>
-              <HeroSvg aria-label="Digital solutions illustration showcasing e-commerce and marketplace management" />
+              <Image
+                src="/assets/illustrations/hero-commerce.svg"
+                alt="Digital solutions illustration showcasing e-commerce and marketplace management"
+                width={750}
+                height={500}
+                priority
+                className={styles.heroIllustration}
+              />
             </div>
           </div>
         </div>

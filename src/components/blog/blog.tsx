@@ -1,126 +1,37 @@
-'use client'
-import React, { useRef } from 'react';
-import Image from 'next/image'
-import Link from 'next/link'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import type { Swiper as SwiperType } from 'swiper';
-import { Navigation } from 'swiper/modules'
-import { FiClock, FiUser } from 'react-icons/fi'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import styles from './blog.module.css'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 import Heading from '@/components/heading/heading'
-import { blogPosts, BlogPost } from '../../data/blog'
-import Button from '@/components/button/Button';
+import { getReadingTime, blogPosts } from '../../data/blog'
+import BlogCarousel from './blog-carousel'
+import type { BlogCardData } from './blog-carousel'
+import styles from './blog.module.css'
 
 interface BlogProps {
-    isSlider?: boolean
+  isSlider?: boolean
 }
 
-const BlogCard = ({ post }: { post: BlogPost }) => {
-    return (
-        <div
-            className={styles.blogCard}
-        >
-            <Link href={`/blog/${post.slug}`} className={styles.imageWrapper}>
-                <Image
-                    src={post.image}
-                    alt={post.title}
-                    width={400}
-                    height={250}
-                    className={styles.image}
-                    priority
-                />
-                <span className={styles.category}>{post.category}</span>
-            </Link>
-            <div className={styles.content}>
-                <Link href={`/blog/${post.slug}`}>
-                    <h3 className={styles.title}>{post.title}</h3>
-                </Link>
-                <p className={styles.excerpt}>{post.excerpt}</p>
-                <div className={styles.meta}>
-                    <div className={styles.metaItem}>
-                        <FiUser className={styles.icon} />
-                        <span>{post.author}</span>
-                    </div>
-                    <div className={styles.metaItem}>
-                        <FiClock className={styles.icon} />
-                        <span>{post.readTime}</span>
-                    </div>
-                </div>
-                <Button href={`/blog/${post.slug}`} variant='primary'>
-                    Read More
-                    <FaChevronRight className={styles.arrow} />
-                </Button>
-            </div>
-        </div>
-    )
-}
+const Blog = ({ isSlider = true }: BlogProps) => {
+  const posts: BlogCardData[] = blogPosts.map(post => ({
+    id: post.id,
+    title: post.title,
+    excerpt: post.excerpt,
+    image: post.image,
+    author: post.author,
+    category: post.category,
+    slug: post.slug,
+    readTime: getReadingTime(post),
+  }))
 
-const Blog: React.FC<BlogProps> = ({ isSlider = true }) => {
-    const swiperRef = useRef<SwiperType | null>(null);
-    
-    // Get only the first 5 blog posts for the slider
-    const sliderPosts = blogPosts.slice(0, 5);
-
-    return (
-        <section className={styles.blogSection}>
-            <div className={styles.container}>
-                <Heading
-                    subtitle='Latest Updates'
-                    title='Insights From Our '
-                    titleHighlight=' Blog'
-                />
-
-                {isSlider ? (
-                    <div className={styles.sliderContainer}>
-                        <Swiper
-                            modules={[Navigation]}
-                            spaceBetween={30}
-                            slidesPerView={1}
-                            speed={0}
-                            onSwiper={(swiper) => {
-                                swiperRef.current = swiper;
-                            }}
-                            breakpoints={{
-                                640: { slidesPerView: 2, spaceBetween: 20 },
-                                1024: { slidesPerView: 3, spaceBetween: 30 }
-                            }}
-                            className={styles.swiper}
-                        >
-                            {sliderPosts.map((post) => (
-                                <SwiperSlide key={post.id}>
-                                    <BlogCard post={post} />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                        <button
-                            className={`${styles.navigationButton} ${styles.prevButton}`}
-                            onClick={() => swiperRef.current?.slidePrev()}
-                            aria-label="Previous blog post"
-                        >
-                            <FaChevronLeft />
-                        </button>
-                        <button
-                            className={`${styles.navigationButton} ${styles.nextButton}`}
-                            onClick={() => swiperRef.current?.slideNext()}
-                            aria-label="Next blog post"
-                        >
-                            <FaChevronRight />
-                        </button>
-                    </div>
-                ) : (
-                    <div className={styles.blogGrid}>
-                        {blogPosts.map((post) => (
-                            <BlogCard key={post.id} post={post} />
-                        ))}
-                    </div>
-                )}
-            </div>
-        </section>
-    )
+  return (
+    <section className={styles.blogSection}>
+      <div className={styles.container}>
+        <Heading
+          subtitle="Latest Updates"
+          title="Insights From Our "
+          titleHighlight=" Blog"
+        />
+        <BlogCarousel posts={isSlider ? posts.slice(0, 5) : posts} isSlider={isSlider} />
+      </div>
+    </section>
+  )
 }
 
 export default Blog

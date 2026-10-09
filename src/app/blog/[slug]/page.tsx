@@ -4,18 +4,16 @@ import BlogDetail from '@/components/blog/blogdetail/blogdetails'
 import { blogPosts } from '@/data/blog'
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-// Generate static params for all blog posts
 export async function generateStaticParams() {
-  // Return empty - all blog pages will be dynamic
-  return []
+  return blogPosts.map(post => ({ slug: post.slug }))
 }
 
-export const dynamicParams = true
+export const dynamicParams = false
 
 // Generate metadata for each blog post
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
@@ -108,7 +106,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <main id="main-content" role="main">
         {/* Blog Detail Section */}
-        <BlogDetail />
+        <BlogDetail post={post} />
       </main>
     </>
   )
