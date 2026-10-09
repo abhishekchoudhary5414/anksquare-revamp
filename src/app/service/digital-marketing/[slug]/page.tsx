@@ -101,5 +101,5 @@ export default async function DigitalMarketingCityPage({ params }: Props) {
     state: city.state
   }
 
-  return <CityServiceClient service={service} city={serializableCity} citySlug={resolvedParams.slug} />
+  return <CityServiceClient service={service} city={serializableCity} />
 }

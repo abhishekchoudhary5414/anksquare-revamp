@@ -1,10 +1,10 @@
 export const quickLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/service' },
+    { name: 'Home page', href: '/' },
+    { name: 'About Ank Square', href: '/about' },
+    { name: 'Service overview', href: '/service' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Clients', href: '/client' },
+    { name: 'Client portfolio', href: '/client' },
     { name: 'Admin', href: '/admin/login' },
     { name: 'Privacy Policy', href: '/privacy-policy' },
     { name: 'Terms & Conditions', href: '/terms-and-conditions' }

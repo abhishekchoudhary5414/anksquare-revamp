@@ -91,5 +91,5 @@ export default async function CityServicePage({ params }: Props) {
     state: city.state
   }
 
-  return <CityServiceClient service={serializableService} city={serializableCity} citySlug={resolvedParams.city} />
+  return <CityServiceClient service={serializableService} city={serializableCity} />
 }

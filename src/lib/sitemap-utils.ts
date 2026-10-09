@@ -1,6 +1,5 @@
 import { MetadataRoute } from 'next'
 import { marketplaceServices, websiteTypes, digitalMarketingTypes, mainServices } from '@/data/service'
-import { cities, getCitySlug } from '@/data/cities'
 import { blogPosts } from '@/data/blog'
 
 export interface SitemapUrl {
@@ -78,33 +77,6 @@ export function generateAllSitemapUrls(): SitemapUrl[] {
     priority: 0.8,
   }))
 
-  // City service pages
-  const cityServicePages: SitemapUrl[] = []
-
-  // Services that have city pages: all except merchant-management and web-development
-  const servicesWithCityPages = [
-    ...marketplaceServices,
-    ...websiteTypes,
-    ...digitalMarketingTypes,
-    {
-      slug: 'digital-marketing',
-      title: 'Digital Marketing'
-    }
-  ]
-
-  // Generate city pages for each service
-  servicesWithCityPages.forEach(service => {
-    cities.forEach(city => {
-      const citySlug = getCitySlug(city.name)
-      cityServicePages.push({
-        url: `${baseUrl}/service/${service.slug}/${citySlug}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: 0.6,
-      })
-    })
-  })
-
   // Client project pages
   const clientPages: SitemapUrl[] = [
     'sharma-interiors',
@@ -126,13 +98,21 @@ export function generateAllSitemapUrls(): SitemapUrl[] {
     priority: 0.6,
   }))
 
-  return [
+  const allUrls = [
     ...staticPages,
     ...servicePages,
-    ...cityServicePages,
     ...clientPages,
     ...blogPages,
   ]
+
+  const uniqueUrls = new Map<string, SitemapUrl>()
+  for (const url of allUrls) {
+    if (!uniqueUrls.has(url.url)) {
+      uniqueUrls.set(url.url, url)
+    }
+  }
+
+  return [...uniqueUrls.values()]
 }
 
 /**

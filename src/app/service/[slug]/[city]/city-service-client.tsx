@@ -27,10 +27,9 @@ interface Service {
 interface CityServiceClientProps {
   service: Service
   city: City
-  citySlug: string
 }
 
-export default function CityServiceClient({ service, city, citySlug }: CityServiceClientProps) {
+export default function CityServiceClient({ service, city }: CityServiceClientProps) {
   const router = useRouter()
 
   const handleEnquiryClick = () => {
@@ -79,29 +78,29 @@ export default function CityServiceClient({ service, city, citySlug }: CityServi
                 <div className={cityStyles.icon}>
                   <EmojiEvents fontSize="large" />
                 </div>
-                <h3>Local Expertise</h3>
-                <p>Deep understanding of {city.name}'s market dynamics and business ecosystem</p>
+                <h3>Service Planning</h3>
+                <p>Review your marketplace requirements and current account status with our team.</p>
               </div>
               <div className={cityStyles.benefitCard}>
                 <div className={cityStyles.icon}>
                   <Bolt fontSize="large" />
                 </div>
-                <h3>Quick Response</h3>
-                <p>Fast support and on-site assistance for businesses in {city.name}</p>
+                <h3>Support Options</h3>
+                <p>Ask about available support and expected response times before choosing a service.</p>
               </div>
               <div className={cityStyles.benefitCard}>
                 <div className={cityStyles.icon}>
                   <Business fontSize="large" />
                 </div>
-                <h3>Proven Track Record</h3>
-                <p>Trusted by 100+ businesses in {city.name} and {city.state}</p>
+                <h3>Relevant Experience</h3>
+                <p>Request examples or client references relevant to your marketplace or industry.</p>
               </div>
               <div className={cityStyles.benefitCard}>
                 <div className={cityStyles.icon}>
                   <TrackChanges fontSize="large" />
                 </div>
-                <h3>Tailored Solutions</h3>
-                <p>Custom strategies for {city.name} market conditions</p>
+                <h3>Business Requirements</h3>
+                <p>Discuss your business goals, products, and platform needs with the team.</p>
               </div>
             </div>
           </div>
@@ -162,47 +161,13 @@ export default function CityServiceClient({ service, city, citySlug }: CityServi
           <div className={styles.container}>
             <h2>Ready to Grow Your Business in {city.name}?</h2>
             <p>
-              Connect with our {service.title} experts in {city.name}. We understand the unique challenges and opportunities in {city.name}, {city.state}.
+              Contact our team to discuss your {service.title.toLowerCase()} requirements in {city.name} and confirm which service options are available.
             </p>
             <div className={styles.ctaButtons}>
               <Button variant="primary" onClick={handleEnquiryClick}>Contact Us Today</Button>
             </div>
           </div>
         </section>
-
-        {/* Structured Data for Local Service */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
-              name: `Ank Square - ${service.title} in ${city.name}`,
-              description: `Professional ${service.title} service in ${city.name}, ${city.state}`,
-              url: `https://www.anksquare.com/service/${service.slug}/${citySlug}`,
-              telephone: '+91-XXXXXXXXXX',
-              areaServed: {
-                '@type': 'City',
-                name: city.name,
-                addressRegion: city.state,
-                addressCountry: 'IN'
-              },
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: city.name,
-                addressRegion: city.state,
-                addressCountry: 'IN'
-              },
-              serviceType: service.title,
-              priceRange: '$$',
-              image: 'https://www.anksquare.com/logo.svg',
-              sameAs: [
-                'https://www.instagram.com/anksquare',
-                'https://www.facebook.com/anksquare'
-              ]
-            }),
-          }}
-        />
 
         {/* Structured Data for Service */}
         <script

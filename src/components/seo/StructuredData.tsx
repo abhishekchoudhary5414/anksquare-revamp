@@ -22,7 +22,8 @@ export default function StructuredData() {
     },
     "sameAs": [
       details.social.instagram,
-      details.social.pinterest
+      details.social.pinterest,
+      details.social.youtube
     ]
   };
 
@@ -36,15 +37,12 @@ export default function StructuredData() {
     "email": details.social.email,
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "25.5941", // Patna coordinates
-      "longitude": "85.1376"
-    },
-    "openingHours": "Mo-Fr 09:00-18:00",
-    "priceRange": "$$"
+      "streetAddress": details.contact.address.street,
+      "addressLocality": details.contact.address.city,
+      "addressRegion": details.contact.address.state,
+      "postalCode": details.contact.address.zipCode,
+      "addressCountry": details.contact.address.country
+    }
   };
 
   const serviceSchema = {
@@ -99,11 +97,6 @@ export default function StructuredData() {
     "publisher": {
       "@type": "Organization",
       "name": details.profile.nameCompany
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.anksquare.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
     }
   };
 

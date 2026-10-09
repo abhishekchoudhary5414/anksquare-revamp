@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 export const homepageMetadata: Metadata = {
+  metadataBase: new URL('https://www.anksquare.com'),
   title: 'Ank Square | Web Development & E-commerce Solutions',
   description: 'Grow your business with Ank Square’s web development, merchant account management, SEO-friendly websites and professional seller support.',
   keywords: [

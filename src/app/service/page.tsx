@@ -27,46 +27,6 @@ export default function ServicesPage() {
       <main id="main-content" role="main">
         {/* Services Component */}
         <Services />
-
-        {/* Structured Data for Organization */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Ank Square',
-              url: 'https://www.anksquare.com',
-              description: 'Leading digital service company providing e-commerce account management, website development, and digital marketing solutions for businesses in India',
-              serviceType: ['E-commerce Management', 'Web Development', 'Digital Marketing'],
-              areaServed: 'India',
-              logo: 'https://www.anksquare.com/logo.svg',
-              contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '+91-XXXXXXXXXX',
-                contactType: 'Customer Service',
-                availableLanguage: 'English'
-              },
-              offers: [
-                {
-                  '@type': 'Service',
-                  name: 'Merchant Account Management',
-                  description: 'Professional e-commerce account management across all major Indian marketplaces'
-                },
-                {
-                  '@type': 'Service',
-                  name: 'Website Development',
-                  description: 'Custom website development with modern technologies and SEO optimization'
-                },
-                {
-                  '@type': 'Service',
-                  name: 'Digital Marketing',
-                  description: 'Comprehensive digital marketing service including SEO, social media, and paid advertising'
-                }
-              ]
-            }),
-          }}
-        />
       </main>
     </>
   )

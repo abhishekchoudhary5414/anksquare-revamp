@@ -23,15 +23,3 @@ Allow: *.svg
 Sitemap: https://www.anksquare.com/sitemap.xml
 Allow: *.webp
 Allow: *.ico
-
-# Crawl delay for respectful crawling
-Crawl-delay: 1
-
-# Sitemap locations
-# Main sitemap index (aggregates all sitemaps)
-Sitemap: https://www.anksquare.com/sitemap-index
-
-# Individual sitemap files are generated dynamically at:
-# https://www.anksquare.com/sitemap-1.xml
-# https://www.anksquare.com/sitemap-2.xml
-# etc. (up to 50,000 URLs per sitemap)
