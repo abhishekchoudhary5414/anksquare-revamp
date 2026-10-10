@@ -1,4 +1,4 @@
-import { getNumberOfSitemapChunks, generateAllSitemapUrls, chunkSitemapUrls } from '@/lib/sitemap-utils'
+import { generateAllSitemapUrls, chunkSitemapUrls } from '@/lib/sitemap-utils'
 
 /**
  * Main sitemap endpoint - returns all URLs in single or multiple sitemaps
