@@ -53,7 +53,7 @@ const Clients: React.FC<ClientsProps> = ({ isSlider = true }) => {
                                     />
                                 </div>
                                 <div className={styles.clientInfo}>
-                                    <h3 className={styles.clientName}>{client.name}</h3>
+                                    <p className={styles.clientName}>{client.name}</p>
                                     <p className={styles.projectType}>{client.project}</p>
                                     <div className={styles.testimonialWrapper}>
                                         <FormatQuoteIcon className={styles.quoteIcon} />
@@ -133,7 +133,7 @@ const Clients: React.FC<ClientsProps> = ({ isSlider = true }) => {
                                         />
                                     </div>
                                     <div className={styles.clientInfo}>
-                                        <h3 className={styles.clientName}>{client.name}</h3>
+                                        <p className={styles.clientName}>{client.name}</p>
                                         <p className={styles.projectType}>{client.project}</p>
                                         <div className={styles.testimonialWrapper}>
                                             <FormatQuoteIcon className={styles.quoteIcon} />

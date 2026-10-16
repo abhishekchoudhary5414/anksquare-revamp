@@ -56,7 +56,7 @@ const aboutPageSchema = {
 export default function AboutPage() {
   return (
     <>
-      <About />
+      <About pageTitle />
     </>
   );
 }

@@ -11,7 +11,7 @@ const serviceHighlights = [
   { ...service.digitalMarketing, title: 'Online Growth Services' },
 ]
 
-const About = () => {
+const About = ({ pageTitle = false }: { pageTitle?: boolean }) => {
   return (
     <section className={styles.about} aria-labelledby="about-heading" itemScope itemType="https://schema.org/AboutPage">
       <div className={styles.container}>
@@ -20,6 +20,7 @@ const About = () => {
           subtitle="About Us"
           title="Empowering Ecommerce Through "
           titleHighlight="Digital Expertise"
+          level={pageTitle ? 1 : 2}
         />
 
 

@@ -8,9 +8,11 @@ interface HeadingProps {
   titleHighlight: string
   id?: string
   theme?: 'default' | 'light'
+  level?: 1 | 2
 }
 
-const Heading = ({ subtitle, title, titleHighlight, id, theme = 'default' }: HeadingProps) => {
+const Heading = ({ subtitle, title, titleHighlight, id, theme = 'default', level = 2 }: HeadingProps) => {
+    const TitleTag = level === 1 ? 'h1' : 'h2'
 
     return (
         <>
@@ -22,7 +24,7 @@ const Heading = ({ subtitle, title, titleHighlight, id, theme = 'default' }: Hea
                 >
                     {subtitle}
                 </span>
-                <h2
+                <TitleTag
                     id={id}
                     className={styles.title}
                 >
@@ -32,7 +34,7 @@ const Heading = ({ subtitle, title, titleHighlight, id, theme = 'default' }: Hea
                     >
                         {titleHighlight}
                     </span>
-                </h2>
+                </TitleTag>
             </div>
         </>
     )
