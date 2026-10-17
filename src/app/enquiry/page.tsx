@@ -14,6 +14,7 @@ import {
 } from '@mui/icons-material'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/enquiry' },
   title: 'Enquiry - Get Started with Ank Square Services',
   description: 'Contact Ank Square for professional e-commerce account management, website development, and digital marketing services. Get a free consultation today.',
   keywords: 'enquiry, contact, consultation, e-commerce services, digital marketing, web development, Ank Square',
@@ -35,6 +36,7 @@ export default function EnquiryPage() {
             subtitle="Get Started"
             title="Enquiry "
             titleHighlight=" Now"
+            level={1}
           />
         </section>
 

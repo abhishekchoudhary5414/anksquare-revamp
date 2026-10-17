@@ -65,12 +65,5 @@ export async function generateMetadata(): Promise<Metadata> {
         'max-snippet': -1,
       },
     },
-    verification: {
-      google: 'your-google-verification-code',
-      yandex: 'your-yandex-verification-code',
-      other: {
-        'msvalidate.01': 'your-bing-verification-code',
-      },
-    },
   }
 }

@@ -39,6 +39,7 @@ const Clients: React.FC<ClientsProps> = ({ isSlider = true }) => {
                         subtitle='Clients'
                         title='Our '
                         titleHighlight='Clients'
+                        level={1}
                     />
                     <div className={styles.gridContainer}>
                         {clients.map((client) => (
@@ -82,6 +83,7 @@ const Clients: React.FC<ClientsProps> = ({ isSlider = true }) => {
                     subtitle='Clients'
                     title='Our '
                     titleHighlight='Clients'
+                    level={2}
                 >
                 </Heading>
                 <div className={styles.sliderContainer}>

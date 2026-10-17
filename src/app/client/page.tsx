@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Clients from '@/components/clients/clients'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/client' },
   title: 'Our Clients - Successful Projects by Ank Square',
   description: 'Discover the diverse portfolio of clients we have worked with. From startups to established businesses, see how Ank Square delivered exceptional digital solutions.',
   keywords: 'client portfolio, case studies, successful projects, business solutions, Ank Square clients, design portfolio, web development projects',

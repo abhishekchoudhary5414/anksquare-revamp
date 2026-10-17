@@ -45,6 +45,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = `Expert ${service.title} service in ${city.name}. Professional implementation with proven results in ${city.state}. Trusted by local businesses.`
 
   return {
+    alternates: {
+      canonical: `/service/${service.slug}/${getCitySlug(city.name)}`,
+    },
     title,
     description,
     keywords: `${service.title} in ${city.name}, ${service.title} ${city.name}, ${service.title} services ${city.state}, local ${service.title}`,

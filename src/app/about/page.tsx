@@ -7,6 +7,7 @@ export const metadata: Metadata = generateSEO({
   ...seoConfigs.about,
   url: 'https://www.anksquare.com/about',
   image: '/og-image-about.jpg',
+  alternates: { canonical: '/about' },
 });
 
 // AboutPage structured data
@@ -56,6 +57,10 @@ const aboutPageSchema = {
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
       <About pageTitle />
     </>
   );

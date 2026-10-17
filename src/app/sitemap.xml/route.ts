@@ -15,7 +15,6 @@ export async function GET(request: Request) {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${chunks[0].map(url => `  <url>
     <loc>${url.url}</loc>
-    <lastmod>${url.lastModified.toISOString()}</lastmod>
     <changefreq>${url.changeFrequency}</changefreq>
     <priority>${url.priority}</priority>
   </url>`).join('\n')}
@@ -36,7 +35,6 @@ ${chunks[0].map(url => `  <url>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${Array.from({ length: chunks.length }, (_, index) => `  <sitemap>
     <loc>${baseUrl}/sitemap/${index + 1}.xml</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
   </sitemap>`).join('\n')}
 </sitemapindex>`
 

@@ -5,6 +5,7 @@ import { testimonials } from '@/data/testimonial'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/testimonial' },
   title: 'Client Testimonials - What Our Customers Say About Ank Square',
   description: 'Read genuine testimonials from our satisfied clients. Discover how Ank Square has helped businesses succeed with merchant account management, website development, and digital marketing service.',
   keywords: 'client testimonials, customer reviews, Ank Square feedback, business success stories, merchant account testimonials, digital service reviews',

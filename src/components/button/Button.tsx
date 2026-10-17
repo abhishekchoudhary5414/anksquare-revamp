@@ -29,6 +29,7 @@ export default function Button({
         href={href}
         className={`${baseClass} ${className}`}
         aria-label={ariaLabel}
+        onClick={onClick}
       >
         {children}
       </a>

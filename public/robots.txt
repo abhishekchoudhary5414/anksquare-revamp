@@ -6,7 +6,6 @@ Allow: /
 # Block access to admin areas
 Disallow: /admin/
 Disallow: /api/
-Disallow: /_next/
 Disallow: /node_modules/
 
 # Allow access to CSS, JS, and image files

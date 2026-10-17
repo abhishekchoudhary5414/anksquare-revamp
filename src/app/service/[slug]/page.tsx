@@ -41,6 +41,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
+    alternates: {
+      canonical: `/service/${service.slug}`,
+    },
     title: `${service.title} Services - Professional Solutions by Ank Square`,
     description: `Expert ${service.title} service for businesses. ${service.details.overview} Professional implementation with proven results.`,
     keywords: `${service.title}, ${service.title} service, e-commerce solutions, digital marketing, web development, Ank Square`,

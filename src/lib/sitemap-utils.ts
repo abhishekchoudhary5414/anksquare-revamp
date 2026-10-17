@@ -4,7 +4,6 @@ import { blogPosts } from '@/data/blog'
 
 export interface SitemapUrl {
   url: string
-  lastModified: Date
   changeFrequency: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
   priority: number
 }
@@ -19,65 +18,61 @@ export function generateAllSitemapUrls(): SitemapUrl[] {
   const staticPages: SitemapUrl[] = [
     {
       url: baseUrl,
-      lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/service`,
-      lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/client`,
-      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/projects`,
-      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/testimonial`,
-      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
       url: `${baseUrl}/terms-and-conditions`,
-      lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
   ]
+
+  staticPages.push({
+    url: `${baseUrl}/enquiry`,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  })
 
   // Service pages
   const servicePages: SitemapUrl[] = [
@@ -90,7 +85,6 @@ export function generateAllSitemapUrls(): SitemapUrl[] {
     }))
   ].map(service => ({
     url: `${baseUrl}/service/${service.slug}`,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
@@ -103,7 +97,6 @@ export function generateAllSitemapUrls(): SitemapUrl[] {
     'sl-engineerings'
   ].map(client => ({
     url: `${baseUrl}/client/${client}`,
-    lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.7,
   }))
@@ -111,7 +104,6 @@ export function generateAllSitemapUrls(): SitemapUrl[] {
   // Blog pages
   const blogPages: SitemapUrl[] = blogPosts.map(post => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
     changeFrequency: 'monthly',
     priority: 0.6,
   }))
@@ -174,7 +166,6 @@ export function getSitemapChunk(chunkIndex: number): SitemapUrl[] {
 export function convertToMetadataRoute(urls: SitemapUrl[]): MetadataRoute.Sitemap {
   return urls.map(url => ({
     url: url.url,
-    lastModified: url.lastModified,
     changeFrequency: url.changeFrequency,
     priority: url.priority,
   }))

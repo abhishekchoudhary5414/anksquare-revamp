@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Blog from '@/components/blog/blog'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog' },
   title: 'Blog - Digital Marketing Insights & E-commerce Trends | Ank Square',
   description: 'Stay updated with the latest digital marketing trends, e-commerce strategies, and industry insights. Expert articles on SEO, social media, AI marketing, and online business growth.',
   keywords: 'digital marketing blog, e-commerce trends, SEO tips, social media marketing, AI marketing, online business, digital strategy, marketing insights',

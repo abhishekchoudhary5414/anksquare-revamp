@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { digitalMarketingTypes, marketplaceServices } from '@/data/service'
-import { cities, getCityBySlug } from '@/data/cities'
+import { getCityBySlug, getCitySlug } from '@/data/cities'
 import CityServiceClient from '../../[slug]/[city]/city-service-client'
 
 interface Props {
@@ -36,13 +36,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = `Expert digital marketing service in ${city.name}. Professional implementation with proven results in ${city.state}. Trusted by local businesses.`
 
   return {
+    alternates: {
+      canonical: `/service/digital-marketing/${getCitySlug(city.name)}`,
+    },
     title,
     description,
     keywords: `digital marketing in ${city.name}, digital marketing ${city.name}, marketing services ${city.state}, local digital marketing`,
     openGraph: {
       title,
       description,
-      url: `https://www.anksquare.com/service/digital-marketing/${resolvedParams.slug}`,
+      url: `https://www.anksquare.com/service/digital-marketing/${getCitySlug(city.name)}`,
       type: 'website',
     },
     twitter: {

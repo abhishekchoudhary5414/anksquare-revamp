@@ -12,6 +12,7 @@ interface SEOProps {
   author?: string;
   section?: string;
   tags?: string[];
+  alternates?: Metadata['alternates'];
 }
 
 export function generateSEO(props: SEOProps): Metadata {
@@ -32,6 +33,7 @@ export function generateSEO(props: SEOProps): Metadata {
     description,
     keywords: keywords.join(', '),
     authors: author ? [{ name: author }] : [{ name: "Ank Square" }],
+    alternates: props.alternates,
     openGraph: {
       title,
       description,

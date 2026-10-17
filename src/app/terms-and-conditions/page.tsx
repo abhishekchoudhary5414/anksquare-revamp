@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { contact } from '@/data/details'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/terms-and-conditions' },
   title: 'Terms & Conditions - Ank Square Digital Services',
   description: 'Read our terms and conditions for using Ank Square service. Understand your rights and responsibilities when working with our digital solutions.',
   keywords: 'terms and conditions, service agreement, Ank Square terms, legal terms, service policies',

@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Contact from '@/components/contact/contact'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/contact' },
   title: 'Contact Ank Square - Get Your Digital Services Quote Today',
   description: 'Ready to grow your business? Contact Ank Square for expert merchant account management, website development, and digital marketing service. Call us or fill the contact form.',
   keywords: 'contact Ank Square, digital service quote, business consultation, merchant account help, website development inquiry',
@@ -25,7 +26,7 @@ export default function ContactPage() {
       <main id="main-content" role="main">
 
         {/* Contact Component */}
-        <Contact />
+        <Contact pageTitle />
 
         {/* Structured Data for Contact Page */}
         <script

@@ -30,7 +30,7 @@ const contactInfo = [
     }
 ]
 
-const Contact = () => {
+const Contact = ({ pageTitle = false }: { pageTitle?: boolean }) => {
     const [formData, setFormData] = useState({
         name: '',
         number: '',
@@ -156,6 +156,7 @@ const Contact = () => {
                     title='Get in Touch '
                     subtitle='Let&apos;s Connect '
                     titleHighlight='Together'
+                    level={pageTitle ? 1 : 2}
                 ></Heading>
 
                 <div className={styles.content}>

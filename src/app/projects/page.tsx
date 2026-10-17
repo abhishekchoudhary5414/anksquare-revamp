@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import ProjectsClient from './ProjectsClient'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/projects' },
   title: 'Our Projects & Services - Ank Square',
   description: 'Explore Ank Square\'s comprehensive portfolio of digital services including merchant account management, website development, digital marketing, and marketplace optimization for Amazon, Flipkart, and more.',
   keywords: [

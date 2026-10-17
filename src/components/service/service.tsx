@@ -1,6 +1,5 @@
 'use client'
 import { FC } from 'react'
-import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import styles from './service.module.css'
 import Button from '../../components/button/Button'
@@ -14,6 +13,10 @@ interface MainServiceComponentProps {
     isReversed: boolean;
 }
 
+interface ServicesProps {
+    pageTitle?: boolean;
+}
+
 const getSubServiceLinkText = (title: string) => {
     const serviceName = title
         .replace(/ Website$/, '')
@@ -24,13 +27,10 @@ const getSubServiceLinkText = (title: string) => {
 };
 
 const MainService = ({ service, isReversed }: MainServiceComponentProps) => {
-    const router = useRouter()
-
     const handleEnquiryClick = () => {
         if (typeof window !== 'undefined') {
             sessionStorage.setItem('selectedEnquiryService', service.title)
         }
-        router.push('/enquiry')
     }
 
     return (
@@ -66,7 +66,7 @@ const MainService = ({ service, isReversed }: MainServiceComponentProps) => {
                     <Button href={service.path} variant="primary">
                         Explore {service.title}
                     </Button>
-                    <Button onClick={handleEnquiryClick} variant="secondary">Enquiry Now</Button>
+                    <Button href="/enquiry" onClick={handleEnquiryClick} variant="secondary">Enquiry Now</Button>
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@ const SubServiceCard = ({ service }: { service: SubService }) => {
         </div>
     )
 }
-const Services = () => {
+const Services = ({ pageTitle = false }: ServicesProps) => {
     return (
         <section className={styles.servicesSection}>
             <div className={styles.container}>
@@ -119,6 +119,7 @@ const Services = () => {
                     subtitle="Explore Our Solutions"
                     title="Web Development & "
                     titleHighlight="E-commerce Solutions"
+                    level={pageTitle ? 1 : 2}
                 />
 
                   {mainServices.map((service, index) => (

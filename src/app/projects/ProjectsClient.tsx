@@ -77,7 +77,7 @@ const ProjectsClient: React.FC = () => {
 
           {/* Client Portfolio Section */}
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>Our Client Portfolio</h2>
+            <h1 className={styles.sectionTitle}>Our Client Portfolio</h1>
             <p className={styles.sectionDescription}>
               Explore our successful projects and transformations across various industries and service categories.
             </p>

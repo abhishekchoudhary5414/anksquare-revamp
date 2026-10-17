@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { contact } from '@/data/details'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/privacy-policy' },
   title: 'Privacy Policy - Ank Square Digital Services',
   description: 'Learn how Ank Square protects your privacy and handles your personal information. Our comprehensive privacy policy covers data collection, usage, and protection practices.',
   keywords: 'privacy policy, data protection, Ank Square privacy, personal information, data security, privacy rights',

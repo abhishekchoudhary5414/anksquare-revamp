@@ -28,6 +28,7 @@ const Blog = ({ isSlider = true }: BlogProps) => {
           subtitle="Latest Updates"
           title="Insights From Our "
           titleHighlight=" Blog"
+          level={isSlider ? 2 : 1}
         />
         <BlogCarousel posts={isSlider ? posts.slice(0, 5) : posts} isSlider={isSlider} />
       </div>

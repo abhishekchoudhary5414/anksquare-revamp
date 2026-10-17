@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Services from '@/components/service/service'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/service' },
   title: 'Our Services - E-commerce Solutions & Digital Marketing | Ank Square',
   description: 'Comprehensive digital service including merchant account management, website development, and digital marketing. Expert e-commerce solutions for Indian businesses across all major platforms.',
   keywords: 'e-commerce service, merchant account management, website development, digital marketing, SEO service, online marketing, e-commerce platform management, web design India, digital marketing agency',
@@ -26,7 +27,7 @@ export default function ServicesPage() {
 
       <main id="main-content" role="main">
         {/* Services Component */}
-        <Services />
+        <Services pageTitle />
       </main>
     </>
   )

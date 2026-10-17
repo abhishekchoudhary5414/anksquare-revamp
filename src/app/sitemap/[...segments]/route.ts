@@ -40,7 +40,6 @@ export async function GET(
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(url => `  <url>
     <loc>${url.url}</loc>
-    <lastmod>${url.lastModified.toISOString()}</lastmod>
     <changefreq>${url.changeFrequency}</changefreq>
     <priority>${url.priority}</priority>
   </url>`).join('\n')}
