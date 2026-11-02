@@ -71,17 +71,12 @@ export default function TestimonialPage() {
                 <article
                   key={testimonial.id}
                   className={styles.testimonialCard}
-                  itemScope
-                  itemType="https://schema.org/Review"
                 >
                   <FaQuoteLeft
                     className={styles.quoteIcon}
                   />
 
-                  <p
-                    className={styles.quote}
-                    itemProp="reviewBody"
-                  >
+                  <p className={styles.quote}>
                     {testimonial.quote}
                   </p>
 
@@ -110,22 +105,15 @@ export default function TestimonialPage() {
                       />
                     </div>
                     <div className={styles.clientDetails}>
-                      <h3
-                        itemProp="author"
-                        itemScope
-                        itemType="https://schema.org/Person"
-                      >
-                        <span itemProp="name">{testimonial.name}</span>
+                      <h3>
+                        <span>{testimonial.name}</span>
                       </h3>
-                      <p
-                        itemProp="jobTitle"
-                      >
+                      <p>
                         {testimonial.position}
                       </p>
                     </div>
                   </div>
 
-                  <meta itemProp="reviewRating" content={testimonial.rating.toString()} />
                 </article>
               ))}
             </div>
@@ -158,37 +146,6 @@ export default function TestimonialPage() {
           </div>
         </section>
 
-        {/* Structured Data for Testimonials */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebPage',
-              name: 'Client Testimonials - Ank Square',
-              description: 'Read genuine testimonials from Ank Square clients about our digital service',
-              url: 'https://www.anksquare.com/testimonial',
-              mainEntity: {
-                '@type': 'Organization',
-                name: 'Ank Square',
-                review: testimonials.map(testimonial => ({
-                  '@type': 'Review',
-                  author: {
-                    '@type': 'Person',
-                    name: testimonial.name,
-                    jobTitle: testimonial.position
-                  },
-                  reviewBody: testimonial.quote,
-                  reviewRating: {
-                    '@type': 'Rating',
-                    ratingValue: testimonial.rating,
-                    bestRating: 5
-                  }
-                }))
-              }
-            }),
-          }}
-        />
       </main>
     </>
   )

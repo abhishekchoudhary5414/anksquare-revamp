@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { marketplaceServices, websiteTypes, digitalMarketingTypes, mainServices } from '@/data/service'
 import { blogPosts } from '@/data/blog'
+import { clients } from '@/data/client'
 
 export interface SitemapUrl {
   url: string
@@ -90,13 +91,8 @@ export function generateAllSitemapUrls(): SitemapUrl[] {
   }))
 
   // Client project pages
-  const clientPages: SitemapUrl[] = [
-    'sharma-interiors',
-    'sah-constructions',
-    'achintya-enterprises',
-    'sl-engineerings'
-  ].map(client => ({
-    url: `${baseUrl}/client/${client}`,
+  const clientPages: SitemapUrl[] = clients.map(client => ({
+    url: `${baseUrl}/client/${client.slug}`,
     changeFrequency: 'monthly',
     priority: 0.7,
   }))

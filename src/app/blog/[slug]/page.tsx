@@ -80,7 +80,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       "name": "Ank Square",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.anksquare.com/logo.png"
+        "url": "https://www.anksquare.com/logo.svg"
       }
     },
     "datePublished": new Date(post.date).toISOString(),

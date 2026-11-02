@@ -67,9 +67,9 @@ const Testimonial: React.FC = () => {
                     >
                         {testimonials.map((t) => (
                             <SwiperSlide key={t.id}>
-                                <article className={styles.testimonialCard} itemScope itemType="https://schema.org/Review">
+                                <article className={styles.testimonialCard}>
                                     <FaQuoteLeft className={styles.quoteIcon} />
-                                    <p className={styles.quote} itemProp="reviewBody">{t.quote}</p>
+                                    <p className={styles.quote}>{t.quote}</p>
 
                                     <div className={styles.rating}>
                                         {Array.from({ length: t.rating }, (_, i) => (
@@ -88,45 +88,20 @@ const Testimonial: React.FC = () => {
                                             />
                                         </div>
                                         <div className={styles.clientDetails}>
-                                            <p className={styles.clientName} itemProp="author" itemScope itemType="https://schema.org/Person">
-                                                <span itemProp="name">{t.name}</span>
+                                            <p className={styles.clientName}>
+                                                <span>{t.name}</span>
                                             </p>
-                                            <p className={styles.clientPosition} itemProp="jobTitle">
+                                            <p className={styles.clientPosition}>
                                                 {t.position}
                                             </p>
                                         </div>
                                     </div>
-                                    <meta itemProp="reviewRating" content={t.rating.toString()} />
                                 </article>
                             </SwiperSlide>
                         ))}
                     </Swiper>
                 </div>
             </div>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Organization",
-                        "name": "Ank Square",
-                        "review": testimonials.map(t => ({
-                            "@type": "Review",
-                            "author": {
-                                "@type": "Person",
-                                "name": t.name,
-                                "jobTitle": t.position
-                            },
-                            "reviewBody": t.quote,
-                            "reviewRating": {
-                                "@type": "Rating",
-                                "ratingValue": t.rating,
-                                "bestRating": 5
-                            }
-                        }))
-                    })
-                }}
-            />
         </section>
     );
 };

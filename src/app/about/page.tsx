@@ -6,7 +6,6 @@ import { details } from '@/data/details';
 export const metadata: Metadata = generateSEO({
   ...seoConfigs.about,
   url: 'https://www.anksquare.com/about',
-  image: '/og-image-about.jpg',
   alternates: { canonical: '/about' },
 });
 
