@@ -87,6 +87,21 @@ const Footer = () => {
                             </ul>
                         </nav>
 
+                        <nav className={styles.linkColumn} aria-label="Our partners">
+                            <p className={styles.columnTitle}>Our Partners</p>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://www.gracetechnologies.uk/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Grace Technologies
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
                     </div>
                 </div>
 

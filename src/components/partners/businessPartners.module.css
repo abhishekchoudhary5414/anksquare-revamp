@@ -1,0 +1,91 @@
+.partnerSection {
+    padding: 6rem 1.5rem;
+    background: var(--bg-background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.partnerCard {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid rgba(33, 63, 97, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(33, 63, 97, 0.1);
+}
+
+.partnerName {
+    margin: 0 0 0.75rem;
+    color: var(--text-primary);
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.partnerName a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.partnerName a:hover {
+    color: #2e5a8c;
+}
+
+.partnerName a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.description {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin: 1.5rem 0 0;
+}
+
+.details div {
+    min-width: 140px;
+}
+
+.details dt {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.details dd {
+    margin: 0.25rem 0 0;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .partnerSection {
+        padding: 4rem 0;
+    }
+
+    .partnerCard {
+        padding: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .partnerCard {
+        padding: 1.5rem;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}

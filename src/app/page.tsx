@@ -7,6 +7,7 @@ import Testimonial from "@/components/testimonial/testimonial";
 import Clients from "@/components/clients/clients";
 import Services from "@/components/service/service";
 import Blog from "@/components/blog/blog";
+import BusinessPartners from "@/components/partners/businessPartners";
 
 export const metadata: Metadata = {
   alternates: {
@@ -25,6 +26,7 @@ export default function Home() {
         <Services />
         <Clients />
         <Blog />
+        <BusinessPartners />
         <Testimonial />
         <Contact />
       </main>
