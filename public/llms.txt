@@ -1,43 +1,70 @@
-# Ank Square (Ank Square Pvt. Ltd.)
+# Ank Square Private Limited
 
-> Ank Square is a premier Indian digital agency and technology partner specializing in e-commerce marketplace management, custom web & app development, and data-driven digital marketing solutions.
+> Ank Square is a Patna, Bihar (India) based digital agency offering marketplace/merchant account management for Amazon, Flipkart, Meesho, Myntra, Ajio, Blinkit, JioMart and Nykaa sellers, custom website development, and digital marketing (SEO, Google Ads, Meta Ads). The company states it has completed 500+ projects for 300+ clients with 5+ years of experience.
 
 ## Overview
-- **Legal Name**: Ank Square Private Limited
-- **Founder**: Mukesh Kumar (Founder & Visionary)
-- **Headquarters**: Ank Square Pvt. Ltd., Ramjaipal Road, Opp. Gola Road, Near Hotel Magadh Palace, Patna, Bihar 801503, India
-- **Website**: https://www.anksquare.com
-- **Contact Email**: contact@anksquare.com
-- **Phone / WhatsApp**: +91-9939337638
-- **Timezone**: Indian Standard Time (IST, UTC+5:30)
+- Legal name: Ank Square Private Limited
+- Founder: Mukesh Kumar
+- Address: Ramjaipal Road, Opp. Gola Road, Near Hotel Magadh Palace, Patna, Bihar 801503, India
+- Email: contact@anksquare.com
+- Phone / WhatsApp: +91-9939337638
+- Entity types: Organization, LocalBusiness, ProfessionalService
+- Serves: Indian brands, manufacturers and small businesses selling online or building SEO-friendly websites; remote services available
 
-## Core Capabilities & Services
+## Core Pages
+- [Home](https://www.anksquare.com/): Services overview, stats and partners
+- [About](https://www.anksquare.com/about): Company background
+- [Services](https://www.anksquare.com/service): Full service list
+- [Projects](https://www.anksquare.com/projects): Portfolio
+- [Clients](https://www.anksquare.com/client): Client case studies
+- [Testimonials](https://www.anksquare.com/testimonial): Customer reviews
+- [Contact](https://www.anksquare.com/contact): Enquiries and office details
 
-### 1. Merchant Account & E-Commerce Marketplace Management
-- **Amazon Seller Account Management**: Product listing optimization, Amazon PPC advertising, brand registry, catalog management, inventory control, and seller health management.
-- **Flipkart Account Management**: Flipkart ads, cataloging, order fulfillment optimization, Tier upgrade consulting.
-- **Etsy & Multi-Channel E-Commerce**: Global storefront setup, international shipping integration, inventory synchronization across marketplace accounts.
+## Marketplace / Merchant Account Management
+- [Merchant Account Management](https://www.anksquare.com/service/merchant-management): Setup, optimization, analytics, inventory
+- [Amazon](https://www.anksquare.com/service/amazon): Account setup and verification, listing optimization, PPC
+- [Flipkart](https://www.anksquare.com/service/flipkart): Seller registration and KYC, catalog management, promotions
+- [Blinkit](https://www.anksquare.com/service/blinkit): Quick commerce integration, inventory syncing
+- [Myntra](https://www.anksquare.com/service/myntra): Fashion onboarding, brand store setup
+- [Meesho](https://www.anksquare.com/service/meesho): Bulk upload, reseller-friendly listings
+- [Ajio](https://www.anksquare.com/service/ajio): Fashion onboarding, pricing strategy
+- [JioMart](https://www.anksquare.com/service/jiomart): Grocery/FMCG listings, vendor portal setup
+- [Nykaa](https://www.anksquare.com/service/nykaa): Beauty onboarding, brand page design
 
-### 2. Web & Mobile App Development
-- **Custom Web Development**: High-performance, SEO-friendly architectures using Next.js, React, Node.js, and TypeScript.
-- **E-Commerce Portals**: Secure e-commerce stores, headless commerce, payment gateway integrations, and conversion-focused UI/UX.
-- **Business & Corporate Websites**: Custom landing pages, brand websites, and interactive portals designed for local and global reach.
+## Website Development
+- [Web Development](https://www.anksquare.com/service/web-development): Custom, responsive, SEO-friendly websites
+- [Business Website](https://www.anksquare.com/service/business-website)
+- [E-commerce Website](https://www.anksquare.com/service/ecommerce-website)
+- [Real Estate Website](https://www.anksquare.com/service/real-estate-website)
+- [Education Website](https://www.anksquare.com/service/education)
+- [Interior Design Website](https://www.anksquare.com/service/interior)
+- [Construction Website](https://www.anksquare.com/service/construction)
+- [Astrology Website](https://www.anksquare.com/service/astrology)
+- [Portfolio Website](https://www.anksquare.com/service/portfolio)
 
-### 3. Digital Marketing & Growth Consulting
-- **Search Engine Optimization (SEO)**: Local SEO, programmatic SEO across Tier-1/Tier-2/Tier-3 Indian cities, technical SEO audits, high-intent keyword strategies.
-- **Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO)**: Structured knowledge graphs, Schema.org entities, Q&A citation mapping for AI models (Gemini, ChatGPT, Perplexity, Claude, Copilot).
-- **Performance Marketing**: Google Ads, Meta Ads (Facebook & Instagram), ROI-focused pay-per-click management.
-- **Social Media Marketing**: Brand storytelling, engagement strategies, and creative asset design.
+## Digital Marketing
+- [Digital Marketing](https://www.anksquare.com/service/digital-marketing): SEO, social media, paid ads, content strategy
+- [Google Ads](https://www.anksquare.com/service/google-ads)
+- [Facebook Marketing](https://www.anksquare.com/service/facebook-marketing)
+- [Instagram Marketing](https://www.anksquare.com/service/instagram-marketing)
+- [YouTube Marketing](https://www.anksquare.com/service/youtube-marketing)
 
-## Target Geography & Footprint
-- **Headquarters & Regional Focus**: Patna, Bihar, India.
-- **Nationwide Coverage**: Active programmatic service hubs across all 28 states & union territories in India (e.g., Delhi, Mumbai, Bengaluru, Hyderabad, Kolkata, Pune, Ahmedabad, Patna, Lucknow, Ranchi, Guwahati, and over 1,000+ regional hubs).
-- **Global Deliverability**: Remote digital services for international brands and cross-border e-commerce sellers.
+## Case Studies
+- [Sharma Interiors](https://www.anksquare.com/client/sharma-interiors)
+- [Sah Constructions](https://www.anksquare.com/client/sah-constructions)
+- [Achintya Enterprises](https://www.anksquare.com/client/achintya-enterprises)
+- [SL Engineerings](https://www.anksquare.com/client/sl-engineerings)
+- [Rehas](https://www.anksquare.com/client/rehas)
+- [Manish K Verma](https://www.anksquare.com/client/manish-k-verma)
 
-## Verifiable Facts & Schema Entities
-- **Primary Schema Entity Type**: `Organization`, `LocalBusiness`, `ProfessionalService`
-- **Social Profiles**:
-  - Instagram: https://www.instagram.com/anksquare/
-  - Pinterest: https://in.pinterest.com/anksquare/
-  - YouTube: https://www.youtube.com/@anksquare
-- **Booking & Inquiries**: https://www.anksquare.com/contact
+## Blog
+- [Blog index](https://www.anksquare.com/blog)
+- [Voice Search Optimization](https://www.anksquare.com/blog/voice-search-optimization)
+- [The Future of Digital Marketing in 2026](https://www.anksquare.com/blog/future-of-digital-marketing-2026)
+
+## Optional
+- [Privacy Policy](https://www.anksquare.com/privacy-policy)
+- [Terms & Conditions](https://www.anksquare.com/terms-and-conditions)
+- [Instagram](https://www.instagram.com/anksquare/)
+- [YouTube](https://www.youtube.com/@anksquare)
+- [Pinterest](https://in.pinterest.com/anksquare/)
