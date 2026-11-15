@@ -28,7 +28,7 @@ export const homepageMetadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://www.anksquare.com/og-image.jpg',
         width: 1024,
         height: 535,
         alt: 'Ank Square - Grow Your Online Business (Marketplace Management, Website Development, Digital Marketing)',
@@ -39,6 +39,6 @@ export const homepageMetadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ank Square Private Limited– Web Development & Merchant Account Management Services for Your Business Growth',
     description: 'Expert merchant account management, custom website development, and digital marketing solutions.',
-    images: ['/og-image.jpg'],
+    images: ['https://www.anksquare.com/og-image.jpg'],
   },
 }

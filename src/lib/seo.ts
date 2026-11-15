@@ -20,13 +20,15 @@ export function generateSEO(props: SEOProps): Metadata {
     title = "Ank Square - Digital Services for Business Growth",
     description = "Transform your business with Ank Square's expert digital service. We specialize in merchant account management, website development, and digital marketing solutions.",
     keywords = ["digital service", "merchant account management", "website development", "digital marketing"],
-    image = "/og-image.jpg",
+    image = "https://www.anksquare.com/og-image.jpg",
     url = "https://www.anksquare.com",
     type = "website",
     author,
     section,
     tags,
   } = props;
+
+  const imageUrl = image?.startsWith('http') ? image : `https://www.anksquare.com${image}`;
 
   const metadata: Metadata = {
     title,
@@ -42,9 +44,9 @@ export function generateSEO(props: SEOProps): Metadata {
       type,
       ...(image ? { images: [
         {
-          url: image,
-          width: 1200,
-          height: 630,
+          url: imageUrl,
+          width: 1024,
+          height: 535,
           alt: title,
         },
       ] } : {}),
@@ -53,7 +55,7 @@ export function generateSEO(props: SEOProps): Metadata {
       card: image ? "summary_large_image" : "summary",
       title,
       description,
-      ...(image ? { images: [image] } : {}),
+      ...(image ? { images: [imageUrl] } : {}),
     },
   };
 

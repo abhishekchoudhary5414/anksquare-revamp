@@ -41,7 +41,7 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: 'en_US',
       images: [
         {
-          url: '/og-image.jpg',
+          url: 'https://www.anksquare.com/og-image.jpg',
           width: 1024,
           height: 535,
           alt: 'Ank Square - Grow Your Online Business (Marketplace Management, Website Development, Digital Marketing)',
@@ -52,7 +52,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: 'Ank Square - Digital Services for Business Growth',
       description: 'Expert merchant account management, custom website development, and digital marketing solutions.',
-      images: ['/og-image.jpg'],
+      images: ['https://www.anksquare.com/og-image.jpg'],
     },
     robots: {
       index: true,

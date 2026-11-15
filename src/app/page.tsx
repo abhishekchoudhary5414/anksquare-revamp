@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { homepageMetadata } from "./metadata";
 import HomeEnquiryPopup from "@/app/enquiry/HomeEnquiryPopup";
 import Hero from "@/components/hero/hero";
 import About from "@/components/about/about";
@@ -10,6 +11,7 @@ import Blog from "@/components/blog/blog";
 import BusinessPartners from "@/components/partners/businessPartners";
 
 export const metadata: Metadata = {
+  ...homepageMetadata,
   alternates: {
     canonical: "/",
   },
