@@ -1,0 +1,43 @@
+# Ank Square (Ank Square Pvt. Ltd.)
+
+> Ank Square is a premier Indian digital agency and technology partner specializing in e-commerce marketplace management, custom web & app development, and data-driven digital marketing solutions.
+
+## Overview
+- **Legal Name**: Ank Square Private Limited
+- **Founder**: Mukesh Kumar (Founder & Visionary)
+- **Headquarters**: Ank Square Pvt. Ltd., Ramjaipal Road, Opp. Gola Road, Near Hotel Magadh Palace, Patna, Bihar 801503, India
+- **Website**: https://www.anksquare.com
+- **Contact Email**: contact@anksquare.com
+- **Phone / WhatsApp**: +91-9939337638
+- **Timezone**: Indian Standard Time (IST, UTC+5:30)
+
+## Core Capabilities & Services
+
+### 1. Merchant Account & E-Commerce Marketplace Management
+- **Amazon Seller Account Management**: Product listing optimization, Amazon PPC advertising, brand registry, catalog management, inventory control, and seller health management.
+- **Flipkart Account Management**: Flipkart ads, cataloging, order fulfillment optimization, Tier upgrade consulting.
+- **Etsy & Multi-Channel E-Commerce**: Global storefront setup, international shipping integration, inventory synchronization across marketplace accounts.
+
+### 2. Web & Mobile App Development
+- **Custom Web Development**: High-performance, SEO-friendly architectures using Next.js, React, Node.js, and TypeScript.
+- **E-Commerce Portals**: Secure e-commerce stores, headless commerce, payment gateway integrations, and conversion-focused UI/UX.
+- **Business & Corporate Websites**: Custom landing pages, brand websites, and interactive portals designed for local and global reach.
+
+### 3. Digital Marketing & Growth Consulting
+- **Search Engine Optimization (SEO)**: Local SEO, programmatic SEO across Tier-1/Tier-2/Tier-3 Indian cities, technical SEO audits, high-intent keyword strategies.
+- **Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO)**: Structured knowledge graphs, Schema.org entities, Q&A citation mapping for AI models (Gemini, ChatGPT, Perplexity, Claude, Copilot).
+- **Performance Marketing**: Google Ads, Meta Ads (Facebook & Instagram), ROI-focused pay-per-click management.
+- **Social Media Marketing**: Brand storytelling, engagement strategies, and creative asset design.
+
+## Target Geography & Footprint
+- **Headquarters & Regional Focus**: Patna, Bihar, India.
+- **Nationwide Coverage**: Active programmatic service hubs across all 28 states & union territories in India (e.g., Delhi, Mumbai, Bengaluru, Hyderabad, Kolkata, Pune, Ahmedabad, Patna, Lucknow, Ranchi, Guwahati, and over 1,000+ regional hubs).
+- **Global Deliverability**: Remote digital services for international brands and cross-border e-commerce sellers.
+
+## Verifiable Facts & Schema Entities
+- **Primary Schema Entity Type**: `Organization`, `LocalBusiness`, `ProfessionalService`
+- **Social Profiles**:
+  - Instagram: https://www.instagram.com/anksquare/
+  - Pinterest: https://in.pinterest.com/anksquare/
+  - YouTube: https://www.youtube.com/@anksquare
+- **Booking & Inquiries**: https://www.anksquare.com/contact

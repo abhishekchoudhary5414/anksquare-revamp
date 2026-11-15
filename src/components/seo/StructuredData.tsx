@@ -35,6 +35,7 @@ export default function StructuredData() {
     "url": "https://www.anksquare.com",
     "telephone": details.social.phone,
     "email": details.social.email,
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": details.contact.address.street,
@@ -42,7 +43,25 @@ export default function StructuredData() {
       "addressRegion": details.contact.address.state,
       "postalCode": details.contact.address.zipCode,
       "addressCountry": details.contact.address.country
-    }
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "25.6174",
+      "longitude": "85.0606"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "sameAs": [
+      details.social.instagram,
+      details.social.pinterest,
+      details.social.youtube
+    ]
   };
 
   const serviceSchema = {

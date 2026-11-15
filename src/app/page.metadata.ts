@@ -39,11 +39,20 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: 'Ank Square',
       type: 'website',
       locale: 'en_US',
+      images: [
+        {
+          url: '/og-image.jpg',
+          width: 1024,
+          height: 535,
+          alt: 'Ank Square - Grow Your Online Business (Marketplace Management, Website Development, Digital Marketing)',
+        },
+      ],
     },
     twitter: {
-    card: 'summary',
-    title: 'Ank Square - Digital Services for Business Growth',
-    description: 'Expert merchant account management, custom website development, and digital marketing solutions.',
+      card: 'summary_large_image',
+      title: 'Ank Square - Digital Services for Business Growth',
+      description: 'Expert merchant account management, custom website development, and digital marketing solutions.',
+      images: ['/og-image.jpg'],
     },
     robots: {
       index: true,

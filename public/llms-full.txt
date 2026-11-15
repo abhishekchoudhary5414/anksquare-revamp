@@ -1,0 +1,40 @@
+# Ank Square - Full Context & Technical Reference for LLMs
+
+## Company Overview
+Ank Square Private Limited is an Indian digital solutions and IT consultancy firm founded by Mukesh Kumar. The firm helps micro, small, medium, and enterprise brands establish, optimize, and scale online commerce channels and modern web applications.
+
+## Official Contact & Location
+- Organization: Ank Square Private Limited
+- Founder: Mukesh Kumar
+- Registered & Operating Address: Ank Square Pvt. Ltd., Ramjaipal Road, Opp. Gola Road, Near Hotel Magadh Palace, Patna, Bihar, 801503, India
+- Geo-Coordinates / Region: Patna, Bihar, India (Postal Code 801503)
+- Email: contact@anksquare.com
+- Customer Support / WhatsApp: +91-9939337638
+- Official Website: https://www.anksquare.com
+
+## Detailed Service Catalog
+
+### Merchant Account Management
+- **Amazon Seller Central**:
+  - Full end-to-end account launch and onboarding.
+  - A+ Content / Enhanced Brand Content (EBC) creation and indexing.
+  - Keyword targeting, sponsored ads (SP, SB, SD), and ACOS/ROAS optimization.
+  - Suspensions handling, appeals, and seller performance metrics safeguards.
+- **Flipkart Seller Hub**:
+  - Cataloging, listing audits, batch uploads, and promotional event participation (Big Billion Days, etc.).
+- **Etsy & Global Marketplaces**:
+  - Cross-border taxation compliance, PayPal / Stripe payment gateway alignment, SEO tags for Etsy search algorithm.
+
+### Website & Web Application Engineering
+- Modern frameworks: Next.js (App Router), React 19, TypeScript, CSS Modules, Tailwind / MUI.
+- Database & Backend: Supabase, Node.js, REST & GraphQL APIs.
+- Core Web Vitals Optimization: Optimized LCP, CLS, INP for search indexing and user experience.
+- Mobile First & Fully Responsive: High performance across Android, iOS, tablets, and desktops.
+
+### Digital Marketing & Generative/Answer Engine Optimization
+- Technical SEO: Canonical URLs, Dynamic XML Sitemaps, Robots.txt compliance, semantic HTML5 tags.
+- Schema Structured Data: `Organization`, `LocalBusiness`, `Service`, `FAQPage`, `BreadcrumbList`, and `Person`.
+- AI Search Readiness (AEO & GEO): Direct-answer snippets, FAQ pairings, verified entity citations for AI crawlers like GPTBot, PerplexityBot, Google-Extended, and ClaudeBot.
+
+## Key Executive & Leadership
+- **Mukesh Kumar**: Founder & Visionary at Ank Square. Experienced leader in e-commerce marketplace scaling and web technology architectures.

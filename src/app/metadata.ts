@@ -26,10 +26,19 @@ export const homepageMetadata: Metadata = {
     siteName: 'Ank Square Private Limited',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1024,
+        height: 535,
+        alt: 'Ank Square - Grow Your Online Business (Marketplace Management, Website Development, Digital Marketing)',
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'Ank Square Private Limited– Web Development & Merchant Account Management Services for Your Business Growth',
     description: 'Expert merchant account management, custom website development, and digital marketing solutions.',
+    images: ['/og-image.jpg'],
   },
 }

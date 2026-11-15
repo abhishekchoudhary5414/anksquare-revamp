@@ -1,14 +1,42 @@
 # Robots.txt for Ank Square - Digital Services Company
-# Allow all web crawlers to access the site
+# Allow all standard web crawlers and AI search agents
 User-agent: *
 Allow: /
 
-# Block access to admin areas
+# Explicit AI and Answer Engine Search Bot Permissions (GEO / AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Block access to admin and internal system paths
 Disallow: /admin/
 Disallow: /api/
 Disallow: /node_modules/
 
-# Allow access to CSS, JS, and image files
+# Allow static assets and media
 Allow: /_next/static/
 Allow: *.css
 Allow: *.js
@@ -17,8 +45,12 @@ Allow: *.jpg
 Allow: *.jpeg
 Allow: *.gif
 Allow: *.svg
-
-# Sitemap
-Sitemap: https://www.anksquare.com/sitemap.xml
 Allow: *.webp
 Allow: *.ico
+
+# LLMs Discovery Files for GEO & LLM Agents
+# https://www.anksquare.com/llms.txt
+# https://www.anksquare.com/llms-full.txt
+
+# Sitemaps
+Sitemap: https://www.anksquare.com/sitemap.xml
